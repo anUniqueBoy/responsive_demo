@@ -1,6 +1,12 @@
 <template>
   <div class="main-container">
-
+    <header class="header-container">
+      <div></div>
+      <img :src="icon" alt="">
+      <div>
+        <img src="" alt="">
+      </div>
+    </header>
   </div>
 </template>
 <script>
@@ -12,6 +18,7 @@ export default {
   },
   data () {
     return {
+      icon: require('@/assets/logo/logo.svg')
     }
   },
   methods: {
@@ -23,8 +30,5 @@ export default {
 <style lang="scss" scoped>
 .main-container{
   height: 100%;
-  .el-container{
-    height: 100%;
-  }
 }
 </style>
